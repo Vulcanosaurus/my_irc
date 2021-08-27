@@ -1,0 +1,112 @@
+* {
+  color: white;
+}
+
+body {
+  background-color: #282c34;
+}
+
+.App {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: row;
+  margin: 2em;
+}
+
+.side-info {
+  min-height: 720px;
+  display: flex;
+  flex-direction: column;
+  flex: 0.1 1 25%;
+  border: 1px solid white;
+}
+.user-info {
+  margin: 5px;
+  border: 1px solid white;
+}
+
+.user-info > * {
+  margin: 5px;
+}
+
+.server-info {
+  max-height: 660px;
+  overflow-y: auto;
+}
+
+.server-block {
+  margin: 5px;
+  padding: 5px;
+}
+
+.server-block:hover {
+  cursor: pointer;
+  background-color: #4A4E57;
+}
+
+
+.chatroom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 0.1 25%;
+  color: black;
+  border: 1px solid white;
+}
+
+.chat-log {
+  overflow: auto;
+  max-height: 670px;
+}
+
+.chat-log > *{
+  margin: 5px;
+}
+
+.chat-input-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid white;
+}
+
+.chat-input-bar > input {
+  flex: 1 0.1 25%;
+}
+
+.chat-input-bar > button {
+  flex: -1 1 25%;
+}
+
+.App-header {
+  width: 100%;
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+input {
+  color: black;
+}
+
+button {
+  background-color: #7D9A9B;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
